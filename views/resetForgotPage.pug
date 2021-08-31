@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    
+    <div class="container mt-5">
+    <h1>Reset your password</h1>
+
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="card">
+                <div class="card-body">
+
+
+    <form action="/index/password-reset/#{data.userID}/#{data.token}" method="POST">
+        <div class="form-group">
+            <label for="pass" class="label">New Password</label>
+            <input id="pass" type="password" class="form-control" data-type="password" name="password" required>
+        </div>
+        <div class="group">
+            <label for="pass" class="label">Repeat New Password</label>
+            <input id="pass" type="password" class="form-control" data-type="password" name="repeat_password" required>
+        </div>
+            <button type="submit" class="btn btn-danger mt-3">Reset</button>
+    </form>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+

@@ -1,0 +1,30 @@
+extends layout
+
+block content
+    
+    <div class="container mt-5">
+    <h1>Reset your password</h1>
+
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="card">
+                <div class="card-body">
+
+
+    <form action="/index/password-reset/resetpassword" method="POST">
+        <div class="form-group">
+            <label for="pass" class="label">Email Address</label>
+            <input id="pass" type="text" class="form-control" name="email" required>
+        </div>
+       
+       
+        <button type="submit" class="btn btn-danger mt-3">Send me the reset link!</button>
+        <a class="btn btn-secondary mt-3" href="/" role="button">Back to Home</a>
+        </form>
+   
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+

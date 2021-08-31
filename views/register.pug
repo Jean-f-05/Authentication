@@ -1,0 +1,39 @@
+extends layout
+
+block content
+    
+    <div class="container mt-5">
+    <h1>Register</h1>
+
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="card">
+                <div class="card-body">
+
+
+    <form action="/index/register" method="POST">
+        <div class="form-group">
+            <label for="user" class="label">Username</label>
+            <input id="user" type="text" class="form-control" name="username" required>
+        </div>
+        <div class="group">
+            <label for="pass" class="label">Password</label>
+            <input id="pass" type="password" class="form-control" data-type="password" name="password" required>
+        </div>
+        <div class="group">
+            <label for="pass" class="label">Repeat Password</label>
+            <input id="pass" type="password" class="form-control" data-type="password" name="repeat_password" required>
+        </div>
+        <div class="group">
+            <label for="pass" class="label">Email Address</label>
+            <input id="pass" type="text" class="form-control" name="email" required>
+        </div>
+            <button type="submit" class="btn btn-dark mt-3">Register</button>
+            <a class="btn btn-secondary mt-3" href="/" role="button">Back to Home</a>
+    </form>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
